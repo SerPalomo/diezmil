@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--Fontawesome link-->
+    <script src="https://kit.fontawesome.com/4bea476014.js" crossorigin="anonymous"></script>
     <title>10MIL - Registro</title>
 </head>
+
 <body>
     <header>
-        <a href="index.html">Inicio</a>
-        <a href="pages/reglamento.html">Reglamento</a>
-        <a href="pages/signup.html">Registro</a>
-
+        <nav>
+            <a class="boton" href="../index.html">Inicio</a>
+            <a class="boton" href="reglamento.html">Reglamento</a>
+            <a class="boton" href="signup.html">Registro</a>
+            </ul>
+        </nav>
+        <h1>10MIL</h1>
+        <h2>online</h2>
+        <article>
+            <h1>Registro</h1>
+            <form action="/action.php" method="post">Name:<input name="name" type="text" />
+                <br>
+                <br>
+                Age: <input max="99" min="1" name="age" step="1" type="number" value="18" />
+                <br>
+                <br>
+                <select name="gender">
+                    <option selected="selected" value="male">Masculino</option>
+                    <option value="female">Femenino</option></select>
+                    <br>
+                    <br>
+                    <textarea cols="20" name="comments" rows="5">Acerca de mi...</textarea><br />
+                    <label><input name="terms" type="checkbox" value="tandc" />Acepto Terminos y condiciones</label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrarse" />
+            </form>
+        </article>
     </header>
-    
+    <main>
+
+    </main>
+
+    <footer>
+        <div class="centrado">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>

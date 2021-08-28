@@ -27,3 +27,39 @@ div i{
     color: white;
     padding: 8px;
 }
+
+input{
+    color: white;
+}
+
+select{
+    color: white;
+}
+
+textarea{
+    color: white;
+}
+
+.boton {
+    margin: 5px;
+    color: rgb(255, 255, 255); 
+    font-size: 27px; 
+    line-height: 27px; 
+    padding: 18px; 
+    border-radius: 26px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, grey,grey 100%); 
+    box-shadow: rgba(0, 0, 0, 0) -100px -100px 0px 0px; 
+    border: 0px solid rgb(28, 110, 164); 
+    display: inline-block;}
+    .boton:hover {
+        background:rgb(201, 201, 201);
+        padding: 22px;    
+    }
+    .boton:active {
+        background:rgb(201, 201, 201); }
