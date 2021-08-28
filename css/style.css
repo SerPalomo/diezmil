@@ -1,0 +1,29 @@
+*{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+h2{
+    color: whitesmoke;
+}
+
+header{
+    padding-left: 10px;
+    color: white;
+}
+
+.centrado{
+    text-align: center;
+}
+
+div i{
+    font-size: 30px;
+    color: white;
+    padding: 8px;
+}
