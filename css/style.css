@@ -3,7 +3,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
+h1,legend{
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -32,6 +32,20 @@ input{
     color: white;
 }
 
+input[type=text]{
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
 select{
     color: white;
 }
@@ -40,7 +54,7 @@ textarea{
     color: white;
 }
 
-.boton {
+.boton,input[type=submit],.boton_tiro {
     margin: 5px;
     color: rgb(255, 255, 255); 
     font-size: 27px; 
@@ -59,7 +73,22 @@ textarea{
     display: inline-block;}
     .boton:hover {
         background:rgb(201, 201, 201);
-        padding: 22px;    
+        padding: 19px;    
     }
     .boton:active {
         background:rgb(201, 201, 201); }
+
+div.dice{
+    float:left;
+    width:32px;
+    background:#d80000;
+    border:#999 1px solid;
+    padding:10px;
+    font-size:24px;
+    text-align:center;
+    margin:5px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}

@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!--Fontawesome link-->
     <script src="https://kit.fontawesome.com/4bea476014.js" crossorigin="anonymous"></script>
+    <!--Animate.style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Javascript-->
+    <script src="js/script.js"></script>
     <title>10MIL</title>
 </head>
 
@@ -23,11 +27,15 @@
             <a class="boton" href="pages/signup.html">Registro</a>
             </ul>
         </nav>
-        <h1>10MIL</h1>
+        <h1 class="animate__animated animate__jackInTheBox">10MIL <img src="/images/dadoportada.png" width="10%"></h1>
         <h2>online</h2>
     </header>
     <main>
-
+        <div id="die1" class="dice">X</div>
+        <div id="die2" class="dice">X</div>
+        <button onclick="rollDice()" class="boton_tiro">Tira el Dado</button>
+        <h2 id="status" style="clear:left;"></h2>
+        <h2 id="tiro" style="clear:left;"></h2>
     </main>
 
     <footer>
