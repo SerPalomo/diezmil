@@ -92,3 +92,37 @@ div.dice{
     font-weight: bold;
     margin-left: 20px;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: DodgerBlue; */
+    align-items: flex-start;
+    
+}
+.player_card {
+    display: grid;
+    grid-template-areas:
+    'image_card'
+    'position_card'
+    'name_card';
+    margin: 10px;
+    width: 120px;
+}
+
+.image_card{
+    grid-area: image_card;
+}
+
+.name_card{
+    grid-area: name_card;
+    color: grey;
+    font-weight: bold;
+}
+    
+
+.position_card{
+    grid-area: position_card;
+    color:white;
+    font-size: 30px;
+}
