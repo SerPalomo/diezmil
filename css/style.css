@@ -13,7 +13,7 @@ h2{
     color: whitesmoke;
 }
 
-header{
+header,main{
     padding-left: 10px;
     color: white;
 }
@@ -28,17 +28,12 @@ div i{
     padding: 8px;
 }
 
-input{
-    color: white;
-}
-
-input[type=text]{
-    border: none;
-    border-bottom: 2px solid red;
-}
-
 input[type=text]:focus {
-    border: 3px solid #555;
+    border: 3px solid rgb(243, 0, 0);
+}
+
+input[type=number]:focus {
+    border: 3px solid rgb(243, 0, 0);
 }
 
 label {
