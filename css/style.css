@@ -14,7 +14,7 @@ h2{
 }
 
 header,main{
-    padding-left: 10px;
+    padding: 10px;
     color: white;
 }
 
@@ -74,7 +74,8 @@ textarea{
         background:rgb(201, 201, 201); }
 
 .boton_tiro{
-    width: 50vw;
+    margin: 10px 0 10px 0;
+    justify-content: center;
 }
 
 div.dice{
@@ -82,10 +83,10 @@ div.dice{
     width:32px;
     background:#d80000;
     border:#999 1px solid;
-    padding:10px;
+    padding:10px 10px 10px 10px;
     font-size:24px;
     text-align:center;
-    margin:5px;
+    margin:5px 5px 5px 5px;
     border-radius: 8px;
     color: white;
     font-weight: bold;
@@ -123,7 +124,6 @@ div.dice{
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    /* background-color: DodgerBlue; */
     align-items: flex-start;
     
 }
@@ -152,4 +152,15 @@ div.dice{
     grid-area: position_card;
     color:white;
     font-size: 30px;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 660px){
+
+    .menu-container{
+        display: inline-flex;       
+        flex-wrap: wrap;
+    }
+
 }

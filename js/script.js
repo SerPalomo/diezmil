@@ -66,8 +66,8 @@ function rollDice() {
     }
     var pos = d1 + d2 + d3 + d4 + d5 + y;
 
-    status.innerHTML = "Suma=  " + pos + ".";
-    tiro.innerHTML = "Tiro Nro=  " + x + ".";
+    status.innerHTML = "Suma=  " + pos;
+    tiro.innerHTML = "Tiro Nro=  " + x;
     x = x + 1;
     y = pos;
     if (pos > 10000) {
@@ -75,5 +75,6 @@ function rollDice() {
         y = 0;
 
     }
+
 
 }
