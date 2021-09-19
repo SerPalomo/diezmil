@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Favicon-->
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!--Fontawesome link-->
@@ -21,7 +23,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="menu-container">
             <a class="boton" href="index.html">Inicio</a>
             <a class="boton" href="pages/reglamento.html">Reglamento</a>
             <a class="boton" href="pages/signup.html">Registro</a>
@@ -32,12 +34,12 @@
         <h2>online</h2>
     </header>
     <main>
-        <div id="die1" class="dice animate__animated animate__jackInTheBox">X</div>
-        <div id="die2" class="dice animate__animated animate__jackInTheBox">X</div>
-        <div id="die3" class="dice animate__animated animate__jackInTheBox">X</div>
-        <div id="die4" class="dice animate__animated animate__jackInTheBox">X</div>
-        <div id="die5" class="dice animate__animated animate__jackInTheBox">X</div>
-        <button onclick="rollDice()" class="boton_tiro">Tira el Dado</button>
+        <div id="die1" class="dice">X</div>
+        <div id="die2" class="dice">X</div>
+        <div id="die3" class="dice">X</div>
+        <div id="die4" class="dice">X</div>
+        <div id="die5" class="dice">X</div>
+        <button onclick="rollDice()" class="boton">Tira el Dado</button>
         <h2 id="status" style="clear:left;"></h2>
         <h2 id="tiro" style="clear:left;"></h2>
     </main>
