@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="centrado">
         <nav class="menu-container">
             <a class="boton" href="index.html">Inicio</a>
             <a class="boton" href="pages/reglamento.html">Reglamento</a>
@@ -31,17 +31,22 @@
             </ul>
         </nav>
         <h1 class="animate__animated animate__jackInTheBox">10MIL <img src="/images/dadoportada.png" width="10%"></h1>
-        <h2>online</h2>
     </header>
     <main>
-        <div id="die1" class="dice">X</div>
-        <div id="die2" class="dice">X</div>
-        <div id="die3" class="dice">X</div>
-        <div id="die4" class="dice">X</div>
-        <div id="die5" class="dice">X</div>
-        <button onclick="rollDice()" class="boton">Tira el Dado</button>
-        <h2 id="status" style="clear:left;"></h2>
-        <h2 id="tiro" style="clear:left;"></h2>
+        <div class="tablero">
+            <div class="dados-tablero">
+                <div id="die1" class="dice">X</div>
+                <div id="die2" class="dice">X</div>
+                <div id="die3" class="dice">X</div>
+                <div id="die4" class="dice">X</div>
+                <div id="die5" class="dice">X</div>
+            </div>
+            <button onclick="rollDice()" class="boton boton_tiro">Tira el Dado</button>
+            <div class="puntaje-tablero">
+                <h2 id="status" style="clear:left;"></h2>
+                <h2 id="tiro" style="clear:left;"></h2>
+            </div>
+        </div>
     </main>
 
     <footer>

@@ -50,7 +50,7 @@ textarea{
 }
 
 .boton,input[type=submit]{
-    grid-area: boton;
+    text-align: center;
     margin: 5px;
     color: rgb(255, 255, 255); 
     font-size: 27px; 
@@ -73,6 +73,10 @@ textarea{
     .boton:active {
         background:rgb(201, 201, 201); }
 
+.boton_tiro{
+    width: 50vw;
+}
+
 div.dice{
     float:left;
     width:32px;
@@ -89,8 +93,31 @@ div.dice{
 }
 
 .menu-container{
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    
+}
+
+.dados-tablero{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.puntaje-tablero{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tablero{
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    
 }
 
 .flex-container {
