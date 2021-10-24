@@ -154,6 +154,19 @@ div.dice{
     font-size: 30px;
 }
 
+.registro{
+    margin-top: 40px;
+}
+
+#error{
+    color: #d80000;
+    margin-bottom: 5px;
+}
+
+ul > li{
+    color:#d80000;
+}
+
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 660px){

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
     <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
-    
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> 
-    
-   
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
 
     <!-- CSS propio -->
     <link rel="stylesheet" href="../css/style.css">
@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!--Fontawesome link-->
     <script src="https://kit.fontawesome.com/4bea476014.js" crossorigin="anonymous"></script>
+    
     <title>10MIL - Registro</title>
 </head>
 
@@ -31,7 +32,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../images/favicon.ico" >10MIL </a>
+                    <img src="../images/favicon.ico">10MIL </a>
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
@@ -56,26 +57,17 @@
     </header>
 
     <main>
-        <form action="/pages/registro.html" method="GET">
+        <form action="/pages/registro.html" id="formulario" method="GET">
             <fieldset>
-                <legend>Registro</legend>
-                <form class="needs-validation" novalidate>
+                <legend class='registro'>Registro</legend>
                     <div class="form-row">
                         <div class="col-md-4 mb-3 ">
-                            <label for="validationCustom01">Nombre</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="" value=""
-                                required>
-                            <div class="valid-feedback">
-                                Correcto!
-                            </div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="" value="">
                         </div>
                         <div class="col-md-4 mb-3 ">
-                            <label for="validationCustom02">Apellido</label>
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="" value=""
-                                required>
-                            <div class="valid-feedback">
-                                Correcto!
-                            </div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="" value="">
                         </div>
                     </div>
                     <div class="form-row">
@@ -83,9 +75,6 @@
                             <label for="edad">Edad</label>
                             <input type="number" class="form-control" id="edad" placeholder="" value="18" required
                                 max="99" min="1" name="edad" step="1">
-                            <div class="valid-feedback">
-                                Correcto!
-                            </div>
                         </div>
                         <div class="col-md-4 mb-3 ">
                             <label for="sexo">Sexo</label>
@@ -103,14 +92,11 @@
                     </div>
 
                     <div class="col-md-4 mb-3">
-                        <label for="validationCustomUsername">Nombre Usuario</label>
+                        <label for="nombre_usuario">Nombre Usuario</label>
                         <div class="input-group">
 
-                            <input type="text" class="form-control" id="validationCustomUsername" placeholder=""
-                                aria-describedby="inputGroupPrepend" required>
-                            <div class="invalid-feedback">
-                                Ingrese nombre de Usuario
-                            </div>
+                            <input type="text" class="form-control" id="nombre_usuario" placeholder="">
+
                         </div>
                     </div>
 
@@ -124,11 +110,8 @@
                     </div>
                     <div class="form-row">
                         <div class="col-md-4 mb-3">
-                            <label for="validationCustom03">Ciudad</label>
-                            <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
-                            <div class="invalid-feedback">
-                                Ingrese una ciudad valida
-                            </div>
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="">
                         </div>
 
                     </div>
@@ -138,36 +121,10 @@
                             <label class="form-check-label" for="invalidCheck">
                                 Aceptar Terminos y Condiciones
                             </label>
-                            <div class="invalid-feedback">
-                                Usted debe aceptar antes de registrarse
-                            </div>
                         </div>
                     </div>
+                    <div id='error'></div>
                     <button class="btn btn-primary" type="submit">Registrarse!</button>
-                </form>
-
-
-
-                <script>
-                    // Example starter JavaScript for disabling form submissions if there are invalid fields
-                    (function () {
-                        'use strict';
-                        window.addEventListener('load', function () {
-                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                            var forms = document.getElementsByClassName('needs-validation');
-                            // Loop over them and prevent submission
-                            var validation = Array.prototype.filter.call(forms, function (form) {
-                                form.addEventListener('submit', function (event) {
-                                    if (form.checkValidity() === false) {
-                                        event.preventDefault();
-                                        event.stopPropagation();
-                                    }
-                                    form.classList.add('was-validated');
-                                }, false);
-                            });
-                        }, false);
-                    })();
-                </script>
             </fieldset>
         </form>
         <br>
@@ -182,6 +139,7 @@
             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
+    <script src="../js/validacion.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
