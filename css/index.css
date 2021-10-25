@@ -1,0 +1,10 @@
+/*  
+MEDIA QUERIES */
+@media only screen and (max-width: 660px){
+
+    .menu-container{
+        display: inline-flex;       
+        flex-wrap: wrap;
+    }
+
+} 

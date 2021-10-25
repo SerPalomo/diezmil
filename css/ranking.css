@@ -1,7 +1,81 @@
+/* # Phone */
+@media only screen and (max-width:320px){
+
+    header > h1,h2 {
+        visibility: hidden;
+    }
+
+    .boton{
+        all: unset;
+    }
+
+    main {
+        margin-top: -150px;
+    }
+
+    header{
+        text-align: center;
+    }
+
+}
+/* # Tablet */
+@media only screen and (min-width:321px) and (max-width:768px){
+
+
+    .image_card > img {
+        width:320px;
+    }
+
+    .player_card {
+        width: 420px;
+    }
+
+    .name_card{
+        font-size: 30px;
+    }
+
+    
+
+    .position_card {
+        font-size: 90px;
+        margin-top:-120px;
+        opacity: 70%;
+        color: white;
+        
+    }
+
+    .name_card{
+        font-size: 40px;
+        margin-top: -120px;
+        opacity: 70%;
+        color: white;
+        text-align: left;
+    }
+    .player_card {
+        grid-template-areas:
+        'image_card image_card image_card'
+        'position_card name_card name_card';
+    }
+
+
+
+}
+
+
+/* # Desktop */
+@media only screen and (min-width:769px){
+    
+}
+
+
+
+
+
+
 /***************************************************/
 /*         Media queries, arranco por mobile         */
 /****************************************************/
-@media only screen and (max-width: 660px) {
+/* @media only screen and (max-width: 660px) {
 
     *{
         background-color: blue;
@@ -35,9 +109,9 @@
     }
 
   }
-  
+ */
 /* CSS mobile*/
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     *{
         background-color: red;
     }
@@ -47,12 +121,12 @@
           'header_register'
           'social_register'
           'email_register';
-        border-color: red; /* Lo uso durante desarrollo para verificar que cosa estoy cambiando*/
+        border-color: red; 
         border-style: solid;
         grid-gap: 0px;
         width: 100%;
         height: 100vh;
         overflow: hidden;
       }
-}
+} */
 

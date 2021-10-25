@@ -139,6 +139,11 @@ div.dice{
 
 .image_card{
     grid-area: image_card;
+    
+}
+
+.image_card > img {
+    width:120px;
 }
 
 .name_card{
@@ -167,13 +172,3 @@ ul > li{
     color:#d80000;
 }
 
-
-/*MEDIA QUERIES*/
-@media only screen and (max-width: 660px){
-
-    .menu-container{
-        display: inline-flex;       
-        flex-wrap: wrap;
-    }
-
-}

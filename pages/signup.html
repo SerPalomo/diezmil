@@ -9,8 +9,9 @@
     <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
 
 
@@ -23,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!--Fontawesome link-->
     <script src="https://kit.fontawesome.com/4bea476014.js" crossorigin="anonymous"></script>
-    
+
     <title>10MIL - Registro</title>
 </head>
 
@@ -33,17 +34,22 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../images/favicon.ico">10MIL </a>
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="reglamento.html">Reglamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="signup.html">Registro</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="ranking.html">Ranking</a>
@@ -60,71 +66,71 @@
         <form action="/pages/registro.html" id="formulario" method="GET">
             <fieldset>
                 <legend class='registro'>Registro</legend>
-                    <div class="form-row">
-                        <div class="col-md-4 mb-3 ">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="" value="">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 ">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="" value="">
+                    </div>
+                    <div class="col-md-4 mb-3 ">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="" value="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm-1 mb-3 ">
+                        <label for="edad">Edad</label>
+                        <input type="number" class="form-control" id="edad" placeholder="" value="18" required max="99"
+                            min="1" name="edad" step="1">
+                    </div>
+                    <div class="col-md-4 mb-3 ">
+                        <label for="sexo">Sexo</label>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="Masculino" name="sexo" class="custom-control-input">
+                            <label class="custom-control-label" for="sexo">Masculino</label>
                         </div>
-                        <div class="col-md-4 mb-3 ">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" class="form-control" id="apellido" placeholder="" value="">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="Femenino" name="sexo" class="custom-control-input">
+                            <label class="custom-control-label" for="Femenino">Femenino</label>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-sm-1 mb-3 ">
-                            <label for="edad">Edad</label>
-                            <input type="number" class="form-control" id="edad" placeholder="" value="18" required
-                                max="99" min="1" name="edad" step="1">
-                        </div>
-                        <div class="col-md-4 mb-3 ">
-                            <label for="sexo">Sexo</label>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="Masculino" name="sexo" class="custom-control-input">
-                                <label class="custom-control-label" for="sexo">Masculino</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="Femenino" name="sexo" class="custom-control-input">
-                                <label class="custom-control-label" for="Femenino">Femenino</label>
-                            </div>
-                        </div>
 
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="nombre_usuario">Nombre Usuario</label>
+                    <div class="input-group">
+
+                        <input type="text" class="form-control" id="nombre_usuario" placeholder="">
 
                     </div>
+                </div>
 
+                <div class="col-sm-3 mb-3 ">
+                    <label for="imagenPerfil">Imagen de Perfil</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="ImagenPerfil">
+                    </div>
+                </div>
+
+                </div>
+                <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="nombre_usuario">Nombre Usuario</label>
-                        <div class="input-group">
-
-                            <input type="text" class="form-control" id="nombre_usuario" placeholder="">
-
-                        </div>
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="">
                     </div>
 
-                    <div class="col-sm-3 mb-3 ">
-                        <label for="imagenPerfil">Imagen de Perfil</label>
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="ImagenPerfil">
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Aceptar Terminos y Condiciones
+                        </label>
                     </div>
-
-                    </div>
-                    <div class="form-row">
-                        <div class="col-md-4 mb-3">
-                            <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="">
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Aceptar Terminos y Condiciones
-                            </label>
-                        </div>
-                    </div>
-                    <div id='error'></div>
-                    <button class="btn btn-primary" type="submit">Registrarse!</button>
+                </div>
+                <div id='error'></div>
+                <button class="btn btn-primary" type="submit">Registrarse!</button>
             </fieldset>
         </form>
         <br>
@@ -141,9 +147,9 @@
     </footer>
     <script src="../js/validacion.js"></script>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
